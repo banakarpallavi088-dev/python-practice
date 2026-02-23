@@ -100,7 +100,7 @@ def add(a,b):
 
 # hello# calling the hello method without ()
 add(2,3)
-# args and 
+# args and kwargs(keyword argument) ,* is args,** kwargs
 def addition(*args):# *args is the tuple name can change
     sum=0
     for i in args:
@@ -108,3 +108,9 @@ def addition(*args):# *args is the tuple name can change
     print(sum)
 addition(1,2,3,4,5,6,7,8,3,5,6,2)
 
+def student(**kw):
+    print("Student information")
+    for i in kw:
+        print(f"{i}:{kw[i]}")
+
+student(name="pallavi",age=20,course="B.E")
