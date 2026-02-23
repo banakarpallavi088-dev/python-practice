@@ -84,7 +84,7 @@ ob3=Animal("dolphin",10)
 ob4=Animal("cat",15)
 print(ob1)
 print("the tuple sum",ob1+(ob2,ob3,ob4))# in tuple
-# decoreter method 
+# decoreter method  fuction that modify the another function without changing the origional code
 def my_decorate(param):# parameter is hello
     def wrapped(a,b):
         print("hello ")
@@ -108,7 +108,7 @@ def addition(*args):# *args is the tuple name can change
     print(sum)
 addition(1,2,3,4,5,6,7,8,3,5,6,2)
 
-def student(**kw):
+def student(**kw):# it is dictionary having key and value we can pass many kwarguments
     print("Student information")
     for i in kw:
         print(f"{i}:{kw[i]}")
